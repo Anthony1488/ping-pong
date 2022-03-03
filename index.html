@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="card">
+
+    <figure class="image is-4by3">
+        <img src="https://cdn.pixabay.com/photo/2019/03/10/14/07/table-tennis-4046303_960_720.jpg" alt="">
+    </figure>
+
+    <h2 class="title is-2 m-4">Ping pong score keeper</h2>
+
+    <h1 class="title is-1 m-5"><span id="player1score">0</span> to <span id="player2score">0</span></h1>
+
+    <div class="card-content">
+        <div class="content">
+            <label for="gameType" class="title is-3">Playing to</label>
+            <div class="select is-link is-rounded ml-2">
+                <select name="Game" id="gameType">
+                    <option value="11" selected>11</option>
+                    <option value="21">21</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <footer class="card-footer ">
+        <button id="addPlayer1" class="button is-medium is-primary card-footer-item">Add to Player 1</button>
+        <button id="addPlayer2" class="button is-medium is-success card-footer-item">Add to Player 2</button>
+        <button id="reset" class="button is-medium is-info card-footer-item">Reset</button>
+    </footer>
+
+    
+</div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
